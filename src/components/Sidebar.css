@@ -1,0 +1,17 @@
+.sidebar-outer{
+
+    width: 100px;
+    height: 100vh;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.image-profile{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+
+  }

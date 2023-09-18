@@ -5,10 +5,14 @@ import Library from "../pages/Library";
 import Trending from "../pages/Trending";
 import Player from "../pages/Player";
 import Favourite from "../pages/Favourite";
+import './Route.css'
+import Sidebar from "../components/Sidebar";
 
 export default function MainRoutes() {
   return (
     <Router>
+      <div className="main-body">
+        <Sidebar/>
       <Routes>
         <Route path="/" element={<Library />} />
         <Route path="/feed" element={<Feed />} />
@@ -16,6 +20,7 @@ export default function MainRoutes() {
         <Route path="/player" element={<Player />} />
         <Route path="/favourite" element={<Favourite />} />
       </Routes>
+      </div>
     </Router>
   );
 }
