@@ -1,6 +1,33 @@
-.sidebar-btn{
-    outline-color: bisque;
-    border-color: antiquewhite;
-    border-width: solid 1 px;
 
+a{
+    text-decoration: none;
+}
+
+.sidebar-btn{
+    color: rgb(218, 209, 209);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    border-color: aliceblue ;
+    margin: 5px auto;
+    transition: all .3s ease-out;
+    background-color: rgba(255, 255, 255, 0.142);
+}
+.sidebar-btn p{
+    font-weight: 600;
+    font-size: 14px;
+    margin: 5px auto;
+}
+
+.btn-icons:hover{
+    color: #fff;
+}
+.sidebar-btn.active{
+    background-color: rgba(255, 255, 255, 0.438);
+    color: #4f4d4d;
+    transform: scale(1.05);
 }

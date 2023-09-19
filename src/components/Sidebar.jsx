@@ -1,7 +1,7 @@
 import React from 'react'
 import './Sidebar.css'
 import SidebarButton from './sidebarButtons/SidebarButton'
-import { MdOutlineFeed,MdFavorite,MdLogout } from "react-icons/md";
+import {MdFavorite,MdLogout,MdFeed } from "react-icons/md";
 import { FaPlay,FaGripfire } from "react-icons/fa";
 import { IoLibrarySharp } from "react-icons/io5";
 
@@ -13,7 +13,7 @@ export default function Sidebar() {
          alt="profile-img"
         className='image-profile' />
         <div className='sidebar-buttons'>
-          <SidebarButton title="Feed" to="/feed" icon={<MdOutlineFeed/>}/>
+          <SidebarButton title="Feed" to="/feed" icon={<MdFeed/>}/>
           <SidebarButton title="Favourite" to="/favourite" icon={<MdFavorite/>}/>
           <SidebarButton title="Trending" to="/trending" icon={<FaGripfire/>}/>
           <SidebarButton title="Player" to="/player" icon={<FaPlay/>}/>
